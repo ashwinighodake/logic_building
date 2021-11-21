@@ -1,5 +1,5 @@
 /*
-1.Write a program which accept matrix from user and return addition of diagonal
+Write a program which accept matrix from user and return addition of diagonal
 elements.
 Input : 3 2 5 9
         4 3 2 2
