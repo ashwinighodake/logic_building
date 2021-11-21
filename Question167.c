@@ -1,34 +1,33 @@
-/*Write a program which accept matrix from user and display transpose of the matrix.
-The transpose of a given matrix is formed by interchanging the rows and
-columns of a matrix.
-*/
+//2. Write a program which accept matrix and reverse the contents of each row.
 
 #include<stdio.h>
-#include<stdlib.h>
 #include<malloc.h>
+#include<stdlib.h>
 
-void Transpos(int **Arr,int iRow,int iCol)
+void ReverseRow(int **Arr,int iRow,int iCol)
 {
-    int i=0,j=0,temp=0;
-    int  transpos[iRow][iCol];
+    int i=0,j=0,k=0;
+    int rev[iRow][iCol];
 
     for(i=0;i<iRow;i++)
     {
-        for(j=0;j<iCol;j++)
+        for(j=0,k=iCol-1;(j<iCol)&&(k>=0);j++,k--)
         {
-           transpos[j][i]=Arr[i][j];
+            rev[i][k]=Arr[i][j];
+            
         }
         
     }
-    printf("\nTranspose matrix is:\n");
+    printf("\nReversed contents are:\n");
     for(i=0;i<iRow;i++)
     {
-        for(j=0;j<iCol;j++)
+        for(j=0,k=iCol-1;(j<iCol)&&(k>=0);j++,k--)
         {
-           printf("%d\t",transpos[i][j]);
+          printf("%d\t",rev[i][j]);
         }
         printf("\n");
     }
+    
     
 }
 int main()
@@ -57,7 +56,6 @@ int main()
             scanf("%d",&p[i][j]);
         }
     }
-
     printf("\nEntered values are:\n");
     for(i=0;i<iRow;i++)
     {
@@ -68,7 +66,7 @@ int main()
         printf("\n");
     }
 
-    Transpos(p,iRow,iCol);
+    ReverseRow(p,iRow,iCol);
 
     for(i=0;i<iRow;i++)
     {
