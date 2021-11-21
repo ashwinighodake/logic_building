@@ -1,5 +1,5 @@
-/*4. Write a program which accept matrix and display addition of elements From each
-column.
+/* 
+Write a program which accept matrix and display addition of elements From each column.
 */
 
 #include<stdio.h>
