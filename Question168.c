@@ -1,34 +1,31 @@
-// Write a program which accept matrix and reverse the contents of each row.
+// Write a program which accept matrix and reverse the contents of each column.
 
 #include<stdio.h>
 #include<malloc.h>
 #include<stdlib.h>
 
-void ReverseRow(int **Arr,int iRow,int iCol)
+void ReverseCol(int **Arr,int iRow,int iCol)
 {
     int i=0,j=0,k=0;
-    int rev[iRow][iCol];
+    int Rev[iRow][iCol];
 
     for(i=0;i<iRow;i++)
     {
         for(j=0,k=iCol-1;(j<iCol)&&(k>=0);j++,k--)
         {
-            rev[i][k]=Arr[i][j];
-            
+            Rev[k][i]=Arr[j][i];
         }
-        
     }
-    printf("\nReversed contents are:\n");
+    printf("\nReversed contents of column:\n");
     for(i=0;i<iRow;i++)
     {
-        for(j=0,k=iCol-1;(j<iCol)&&(k>=0);j++,k--)
+        for(j=0,k=iCol;(j<iCol)&&(k>=0);j++,k--)
         {
-          printf("%d\t",rev[i][j]);
+            printf("%d\t",Rev[i][j]);
         }
         printf("\n");
     }
-    
-    
+
 }
 int main()
 {
@@ -66,7 +63,7 @@ int main()
         printf("\n");
     }
 
-    ReverseRow(p,iRow,iCol);
+    ReverseCol(p,iRow,iCol);
 
     for(i=0;i<iRow;i++)
     {
