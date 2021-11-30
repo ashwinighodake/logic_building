@@ -1,10 +1,11 @@
-/* Write a java program which accept string from user and count number of small characters.
-Input : “Marvellous”
+/* Write a java program which accept string from user and return
+difference between frequency of small characters and frequency
+of capital characters.
 */
 
 import java.util.*;
 
-class Question184
+class Question185
 {
     public static void main(String args[])
     {
@@ -26,15 +27,19 @@ class Count
 {
       public int CountCapital(String str)
       {
-        int i=0,iCnt=0;  
+        int i=0,iSum1=0,iSum2=0;  
         char arr[]=str.toCharArray();
           for(i=0;i<arr.length;i++)
           {
-              if((arr[i]>='a')&&(arr[i]<='z'))
+            if((arr[i]>='A')&&(arr[i]<='Z'))
+            {
+              iSum1++;
+            }
+            else if((arr[i]>='a')&&(arr[i]<='z'))
               {
-                iCnt++;
+                iSum2++;
               }
           }
-          return iCnt;
+          return iSum2-iSum1;
       }
 }
