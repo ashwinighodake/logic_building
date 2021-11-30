@@ -1,6 +1,5 @@
 /*
-Write Java program which accept N numbers from user and display
-all such elements which are even and divisible by 5.
+Write Java program which accept N numbers from user and display all such elements which are even and divisible by 5.
 */
 
 import java.util.*;
