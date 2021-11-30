@@ -1,8 +1,10 @@
-/* Write Java program which accept N numbers from user and display all such elements which are divisible by 5.
+/*
+Write Java program which accept N numbers from user and display all such elements which are divisible by 3 and 5.
 */
+
 import java.util.*;
 
-class Question189
+class Question191
 {
     public static void main(String args[])
     {
@@ -20,17 +22,17 @@ class Question189
             Arr[i]=sobj.nextInt();
         }
         Division aobj=new Division();
-        aobj.Divisible5(Arr);
+        aobj.Divisible(Arr);
 
     }
 }
 class Division
 {
-    public void Divisible5(int Arr[])
+    public void Divisible(int Arr[])
     {
         for(int i=0;i<Arr.length;i++)
         {
-            if((Arr[i]%5)==0)
+            if(((Arr[i]%3)==0)&&((Arr[i]%5)==0))
             {
                 System.out.print(Arr[i]+"\t");
             }
