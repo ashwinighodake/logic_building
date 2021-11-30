@@ -1,12 +1,11 @@
-/*Write a Java program which accept string from user and count
-number of capital characters.
-Input : “Marvellous Multi OS”
-Output : 4
-
+/* Write a java program which accept string from user and count
+number of small characters.
+Input : “Marvellous”
 */
+
 import java.util.*;
 
-class Question183
+class Question184
 {
     public static void main(String args[])
     {
@@ -32,7 +31,7 @@ class Count
         char arr[]=str.toCharArray();
           for(i=0;i<arr.length;i++)
           {
-              if((arr[i]>='A')&&(arr[i]<='Z'))
+              if((arr[i]>='a')&&(arr[i]<='z'))
               {
                 iCnt++;
               }
