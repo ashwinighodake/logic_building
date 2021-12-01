@@ -1,6 +1,5 @@
 /*
-3. Write java program which accept N numbers from user and accept
-one another number as NO , return index of last occurrence of that NO.
+ Write java program which accept N numbers from user and accept one another number as NO , return index of last occurrence of that NO.
 */
 
 import java.util.*;
