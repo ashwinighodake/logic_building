@@ -1,6 +1,5 @@
 /*
-Write a program which accept number from user and return
-multiplication of all digits.
+Write a program which accept number from user and return multiplication of all digits.
 */
 
 import java.util.*;
