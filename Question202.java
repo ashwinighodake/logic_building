@@ -1,5 +1,4 @@
-/* Write java program which accept N numbers from user and return
-product of all odd elements.
+/* Write java program which accept N numbers from user and return product of all odd elements.
 */
 
 import java.util.*;
