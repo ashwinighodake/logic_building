@@ -4,7 +4,7 @@ then concat whole string after first string.
 */
 import java.util.*;
 
-class Question3
+class Question204
 {
     public static void main(String args[])
     {
