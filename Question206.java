@@ -1,6 +1,5 @@
 /*
- Accept string from user and check whether the string is
-palindrome or not without considering its case.
+ Accept string from user and check whether the string is palindrome or not without considering its case.
 Input : “1abccBA1”
 */
 import java.util.*;
