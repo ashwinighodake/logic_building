@@ -1,5 +1,4 @@
-/* Write java program which accept N numbers from user and accept
-Range, Display all elements from that range
+/* Write java program which accept N numbers from user and accept Range, Display all elements from that range
 */
 
 import java.util.*;
