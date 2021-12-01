@@ -1,15 +1,17 @@
-/* Write Java program which accept String from user and display below pattern.
-Input:Hello
-Output:
+/*
+ Write Java program which accept String from user and display below pattern.
+ Input:Hello
+ Output:
         H e l l o
-        H e l l o
-        H e l l o
-        H e l l o
-*/
+        H e l l
+        H e l
+        H e
+        H
+ */
 
 import java.util.*;
 
-class Question216
+class Question217
 {
     public static void main(String args[])
     {
@@ -35,7 +37,7 @@ class Matrix
 
         for(i=0;i<Arr.length;i++)
         {
-            for(j=0;j<Arr.length;j++)
+            for(j=0;j<(Arr.length-i);j++)
             {
                 System.out.print(Arr[j]+"\t");
             }
