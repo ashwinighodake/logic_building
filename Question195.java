@@ -1,11 +1,11 @@
 /*
-Write a program which accept number from user and return the count of odd digits.
+Write a program which accept number from user and return the
+count of digits in between 3 and 7.
 */
-
 
 import java.util.*;
 
-class Question194
+class Question195
 {
     public static void main(String args[])
     {
@@ -14,24 +14,24 @@ class Question194
         System.out.println("Enter the number:");
         int iValue=sobj.nextInt();
 
-        Odd eobj=new Odd();
+        Range eobj=new Range();
 
-        int iRet=eobj.OddDigit(iValue);
+        int iRet=eobj.RangeX(iValue);
 
         System.out.println("Count is:"+iRet);
 
     }
 }
-class  Odd
+class  Range
 {
-    public int OddDigit(int iNo)
+    public int RangeX(int iNo)
     {
          int iDigit=0,i=0;
 
          while(iNo!=0)
          {
              iDigit=iNo%10;
-             if((iDigit%2)!=0)
+             if((iDigit>3)&&(iDigit<7))
              {
                  i++;
              }
