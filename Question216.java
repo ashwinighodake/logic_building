@@ -1,4 +1,4 @@
-/*1. Write Java program which accept String from user and display
+/* Write Java program which accept String from user and display
 below pattern.
 Input:Hello
 Output:
