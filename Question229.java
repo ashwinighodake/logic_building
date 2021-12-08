@@ -1,6 +1,10 @@
 /*
  Program to check given string are Anagram or not.
   this java program will read two strings & check whether they are anagram string or not.
+
+  Input : Peek
+          Keep
+  Output:Anagram
 */
 import java.lang.*;
 import java.util.*;
