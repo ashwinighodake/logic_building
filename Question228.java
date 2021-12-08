@@ -1,5 +1,5 @@
-/* Write a java program which accept number of rows and number of
-columns from user and display below pattern.
+/* Write a java program which accept number of rows and number of columns from user and display below pattern.
+
 Input:Row:4 col:4
 output:
        * * * *
